@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+}
+
+.container{
+    position: absolute;
+    inset: 0;
+}
+
+.container img{
+   position: absolute;
+   top: 0;
+   left: 500px;
+   width: 50%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.container img.foto{
+    filter: brightness(2) grayscale(1);
+}
+
+.container img.texture{
+  mix-blend-mode: multiply;
+  filter: contrast(1.5) brightness(2);
+}
